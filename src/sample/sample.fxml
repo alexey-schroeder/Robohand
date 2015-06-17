@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.CategoryAxis?>
+<HBox spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+      fx:controller="sample.Controller">
+    <children>
+
+        <VBox spacing="10">
+            <children>
+                <BarChart fx:id="chart" >
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" label="Sensor Nr."/>
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </BarChart>
+                <Button fx:id="resetButton" onAction="#reset" text="Reset"/>
+            </children>
+            <padding>
+                <Insets top="25" bottom="25" right="25"/>
+            </padding>
+
+        </VBox>
+    </children>
+</HBox>
